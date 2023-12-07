@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <link rel="stylesheet" href="./styles/zakladni.css" />
+    <link rel="stylesheet" href="./styles/vrchni_carousel.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <meta charset="utf-8">
+    <script src="./js/zakladni_interface.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <title>Nové automobily a elektromobily Hyundai</title>
+    <link rel="icon" type="image/x-icon" href="./obrazky/mainlogo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div id="rozkliknuty_burbr">
+        <div id="burbr_zavrit" class="clickable" onclick="zavriBurbr()"></div>
+        <div id="burbr_obsah">
+            <ul id="burbr_seznam">
+                <li><span id="burbr1" class="clickable">Modely</span></li>
+                <li><span id="burbr2" class="clickable">Akce</span></li>
+                <li><span id="burbr3" class="clickable">Prodej</span></li>
+                <li><span id="burbr4" class="clickable">Emobilita</span></li>
+                <li><span id="burbr5" class="clickable">Servis</span></li>
+                <li><span id="burbr6" class="clickable">O značce</span></li>
+                <li><span id="burbr7" class="clickable">Mapa prodejců</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <header>
+        <div id="horni_lista">
+            <div id="kliknutelne_logo" class="clickable" onclick="location.href='./index.html'"></div>
+            <div id="normal_menu">
+                <div class="clickable">Modely</div>
+                <div class="clickable">Akce</div>
+                <div class="clickable">Prodej</div>
+                <div class="clickable">Emobilita</div>
+                <div class="clickable">Servis</div>
+                <div class="clickable">O značce</div>
+                <div class="clickable">Mapa prodejců</div>
+            </div>
+            <div id="burbr_menu" class="clickable" onclick="otevriBurbr()"></div>
+        </div>
+    </header>
+    <div id="vrchni_carousel_obal">
+        <div id="vrchni_carousel">
+            <div class="vc_obsah">
+                <div class="vc_obrazek_obal">
+                    <img class="vc_obrazek" src="./obrazky/vrchnicarousel/vanoce.avif" />
+                </div>
+                <div class="vc_nonimage">
+                    <div class="vc_text">
+                        <h1>Vánoční bonus 20 000 Kč</h1>
+                        <h4>Pouze nyní na vybrané skladové vozy.</h4>
+                    </div>
+                    <div class="vc_nabidka">
+                        <div style="display:flex; flex-direction: row; justify-content: center;">
+                            <a href="./index.html">Více o nabídce</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vc_obsah">
+                <div class="vc_obrazek_obal">
+                    <img class="vc_obrazek" src="./obrazky/vrchnicarousel/kona.avif" />
+                </div>
+                <div class="vc_nonimage">
+                    <div class="vc_text">
+                        <h1>Nová KONA Electric</h1>
+                        <h4>Live unlimited.</h4>
+                    </div>
+                    <div class="vc_nabidka">
+                        <span>Nyní na operativní leasing vč. služeb za 990 Kč měsíčně bez DPH.</span>
+                        <div>
+                            <img src="./obrazky/sipka.svg" class="sipka" />
+                            <a href="./index.html">Více o nabídce</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vc_obsah">
+                <div class="vc_obrazek_obal">
+                    <img class="vc_obrazek" src="./obrazky/vrchnicarousel/tucson.avif" />
+                </div>
+                <div class="vc_nonimage">
+                    <div class="vc_text">
+                        <h1>TUCSON</h1>
+                        <h4>Se zvýhodněním až 165 000 Kč.</h4>
+                    </div>
+                    <div class="vc_nabidka">
+                        <div>
+                            <a href="./index.html">Zjistit více</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vc_obsah">
+                <div class="vc_obrazek_obal">
+                    <img class="vc_obrazek" src="./obrazky/vrchnicarousel/santafe.avif" />
+                </div>
+                <div class="vc_nonimage">
+                    <div class="vc_text">
+                        <h1>Nové SANTA FE</h1>
+                        <h4>Pro největší dobrodružství.</h4>
+                    </div>
+                    <div class="vc_nabidka">
+                        <div>
+                            <a href="./index.html">Zjistit více</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="vc_obsah">
+                <div class="vc_obrazek_obal">
+                    <img class="vc_obrazek" src="./obrazky/vrchnicarousel/i20.avif" />
+                </div>
+                <div class="vc_nonimage">
+                    <div class="vc_text">
+                        <h1>Nová i20</h1>
+                        <h4>Vzrušení na dosah. </h4>
+                    </div>
+                    <div class="vc_nabidka">
+                        <div>
+                            <a href="./index.html">Chci ji vidět</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vc-tlacitka">
+            <div class="vc-tlacitko"></div>
+            <div class="vc-tlacitko"></div>
+            <div class="vc-tlacitko"></div>
+            <div class="vc-tlacitko"></div>
+            <div class="vc-tlacitko"></div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div id="rezervace">
+            <h1>Vyzkoušejte svůj nový vůz</h1>
+            <div> Domluvte si nezávaznou testovací jízdu vybraným modelem Hyundai. </div>
+            <a href="index.html" class="blue-button">Rezervovat jízdu</a>
+        </div>
+        <div id="modely">
+            <h2>Nové modely</h2>
+            <div id="model-fotky">
+                <div class="model-fotka">
+                    <div class="model-novinka">NOVINKA</div>
+                    <img src="./obrazky/kona.avif" style="width: 100%;" />
+                    <div class="model-text">Nová KONA Electric</div>
+                </div>
+                <div class="model-fotka">
+                    <div class="model-novinka">NOVINKA</div>
+                    <img src="./obrazky/ioniq6.png" style="width: 100%;" />
+                    <div class="model-text">IONIQ 6</div>
+                </div>
+                <div class="model-fotka">
+                    <div class="model-novinka">NOVINKA</div>
+                    <img src="./obrazky/i20.avif" style="width: 100%;" />
+                    <div class="model-text">Nová i20</div>
+                </div>
+            </div>
+            <div id="modely-tlacitka">
+                <div class="modely-tlacitko"></div>
+                <div class="modely-tlacitko"></div>
+                <div class="modely-tlacitko"></div>
+            </div>
+            <a href="index.html" class="blue-button">Všechny modely</a>
+        </div>
+        <div id="random_zajimave">
+            <h2>Mohlo by vás zajímat</h2>
+            <div class="zajimave-cast">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/ion5.avif" />
+                <div class="zajimave-text">
+                    <h3>Nový model IONIQ 5 N</h3>
+                    <div>Zjistěte to nejdůležitější o nejnovějším modelu Hyundai IONIQ 5 N.</div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>Zjistit více</div>
+                    </a>
+                </div>
+            </div>
+            <div class="zajimave-cast-reverse">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/hlavninabidky.jpg" />
+                <div class="zajimave-text">
+                    <h3>Akční nabídky</h3>
+                    <div>Prozkoumejte všechny limitované akce a cenová zvýhodnění.</div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>Prozkoumat akce</div>
+                    </a>
+                </div>
+            </div>
+            <div class="zajimave-cast">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/novevozy.avif" />
+                <div class="zajimave-text">
+                    <h3>Nové vozy dostupné ihned</h3>
+                    <div>Prohlédněte si skladové vozy, které jsou ihned k odběru. </div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>Skladové vozy</div>
+                    </a>
+                </div>
+            </div>
+            <div class="zajimave-cast-reverse">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/click.avif" />
+                <div class="zajimave-text">
+                    <h3>Cl!ck to Buy</h3>
+                    <div>Pořiďte si svůj nový vůz Hyundai z pohodlí vašeho domova přes rozhraní Cl!ck to Buy a získejte
+                        voucher na příslušenství zdarma. </div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>Více o Cl!ck to Buy</div>
+                    </a>
+                </div>
+            </div>
+            <div class="zajimave-cast">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/electrified.jpg" />
+                <div class="zajimave-text">
+                    <h3>Hyundai Electrified </h3>
+                    <div>Navštivte nové centrum e-mobility na pražských Stodůlkách.</div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>Fandím elektromobilitě</div>
+                    </a>
+                </div>
+            </div>
+            <div class="zajimave-cast-reverse">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/benefity.png" />
+                <div class="zajimave-text">
+                    <h3>Benefity Hyundai</h3>
+                    <div> Poznejte všechny atraktivní benefity Hyundai, které získáte k novému vozu.</div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>Objevit benefity</div>
+                    </a>
+                </div>
+            </div>
+            <div class="zajimave-cast">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/mapa.jpg" />
+                <div class="zajimave-text">
+                    <h3>Mapa prodejců a servisů</h3>
+                    <div>Vyhledejte nejbližšího autorizovaného prodejce nebo servis Hyundai.</div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>Přejít na mapu dealerů</div>
+                    </a>
+                </div>
+            </div>
+            <div class="zajimave-cast-reverse">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/financovani.jpg" />
+                <div class="zajimave-text">
+                    <h3>Výhodné financování vozu</h3>
+                    <div>Objevte všechny možnosti výhodného financování vozu Hyundai.</div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>Více of financování</div>
+                    </a>
+                </div>
+            </div>
+            <div class="zajimave-cast">
+                <img class="zajimave-fotka" src="./obrazky/zajimave/suv.jpg" />
+                <div class="zajimave-text">
+                    <h3>Chcete nové SUV?</h3>
+                    <div>Vyberte si svůj nový vůz dle vašich potřeb z nabídky klasických, hybridních i čistě
+                        elektrických SUV.</div>
+                    <a class="zajimave-zjistit" href="index.html">
+                        <img src="./obrazky/sipka-modra.svg" />
+                        <div>SUV Hyundai</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="zaruka">
+            <h3>5letá záruka bez omezení kilometrů. </h3>
+            <div> Každý Hyundai je vyroben podle nejvyšších možných standardů kvality. A tuto kvalitu podporujeme 5letou
+                zárukou bez omezení počtu kilometrů. Abyste si mohli v životě užívat věci, které máte rádi, aniž byste
+                se
+                museli starat o své auto. Užijte si extra klid, který vám poskytuje jedna z nejlepších záruk v oboru. Ta
+                je
+                u nás standardem. </div>
+            <div id="zaruka-obrazky">
+                <img id="zaruka-logo" src="./obrazky/zaruka/zaruka.jpg">
+                <img id="zaruka-typek" src="./obrazky/zaruka/typek.jpg">
+            </div>
+
+            <a href="index.html" class="blue-button">Více o záruce</a>
+        </div>
+        <div id="blogisek">
+            <h2>Čtěte na <a style="color: rgb(0, 44, 95); text-decoration: none;" href="index.html">blogu</a></h2>
+            <div id="blogy">
+                <a href="neni.html" class="blog">
+                    <div class="blog-fotka"><img src="./obrazky/blogisek/zavod.avif" /></div>
+                    <h3 class="blog-nazev">Elantra N TCR týmu Hyundai Janík Motorsport pojede v Mostě o titul</h3>
+                    <div class="blog-text">Do letošní okruhové sezóny nastoupil český tým s novými rychlými vozy Hyundai
+                        Elantra N TCR a nemůže si je vynachválit.</div>
+                </a>
+
+                <a href="neni.html" class="blog">
+                    <div class="blog-fotka"><img src="./obrazky/blogisek/svetla.avif" /></div>
+                    <h3 class="blog-nazev">Od acetylenu k LED pixelům. Evoluce automobilových světel</h3>
+                    <div class="blog-text">Už při prvním pohledu na auto upoutají světlomety pozornost. Kromě své
+                        praktické funkce jsou i jedním z nejdůležitějších stylistických prvků.</div>
+                </a>
+
+                <a href="neni.html" class="blog">
+                    <div class="blog-fotka"><img src="./obrazky/blogisek/wrc.avif" /></div>
+                    <h3 class="blog-nazev">Extrémní jízda na vlastní oči. WRC poprvé míří do Česka</h3>
+                    <div class="blog-text">Letos se mistrovství světa v rallye vůbec poprvé v celé své 51 let dlouhé
+                        historii pojede v České republice</div>
+                </a>
+            </div>
+            <div id="blogisek-tlacitka">
+                <div class="blogisek-tlacitko"></div>
+                <div class="blogisek-tlacitko"></div>
+                <div class="blogisek-tlacitko"></div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer-obal">
+                <img src="./obrazky/logo.svg" />
+                <div id="footer-sekce-obal">
+                    <div class="footer-sekce">
+                        <div class="footer-nazev">Modely</div>
+                        <div class="footer-odkazy">
+                            <a href="neni.html">i10</a>
+                            <a href="neni.html">i20</a>
+                            <a href="neni.html">Nová i20</a>
+                            <a href="neni.html">i20 N</a>
+                            <a href="neni.html">i30</a>
+                            <a href="neni.html">i30 Kombi</a>
+                            <a href="neni.html">i30 Fastback</a>
+                            <a href="neni.html">i30 N</a>
+                            <a href="neni.html">i30 N Fastback</a>
+                            <a href="neni.html">BAYON</a>
+                            <a href="neni.html">KONA</a>
+                            <a href="neni.html">Nová KONA</a>
+                            <a href="neni.html">KONA Hybrid</a>
+                            <a href="neni.html">Nová KONA Hybrid</a>
+                            <a href="neni.html">KONA Electric</a>
+                            <a href="neni.html">Nová KONA Electric</a>
+                            <a href="neni.html">KONA N</a>
+                            <a href="neni.html">TUCSON</a>
+                            <a href="neni.html">TUCSON Hybrid</a>
+                            <a href="neni.html">TUCSON Plug-in</a>
+                            <a href="neni.html">SANTA FE</a>
+                            <a href="neni.html">SANTA FE Hybrid</a>
+                            <a href="neni.html">SANTA FE Plug-in</a>
+                            <a href="neni.html">Nové SANTA FE</a>
+                            <a href="neni.html">IONIQ 5</a>
+                            <a href="neni.html">IONIQ 5 N</a>
+                            <a href="neni.html">IONIQ 6</a>
+                            <a href="neni.html">STARIA</a>
+                            <a href="neni.html">NEXO</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-sekce">
+                        <div class="footer-nazev">Prodej a služby</div>
+                        <div class="footer-odkazy">
+                            <a href="neni.html">Mapa prodejců</a>
+                            <a href="neni.html">Akční nabídky</a>
+                            <a href="neni.html">Benefity Hyundai</a>
+                            <a href="neni.html">Financování</a>
+                            <a href="neni.html">Konfigurátor</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-sekce">
+                        <div class="footer-nazev">Servis a příslušenství</div>
+                        <div class="footer-odkazy">
+                            <a href="neni.html">Mapa servisů</a>
+                            <a href="neni.html">Sezónní nabídky</a>
+                            <a href="neni.html">Ceníky příslušenství</a>
+                            <a href="neni.html">Dětské příslušenství</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-sekce">
+                        <div class="footer-nazev">Formuláře</div>
+                        <div class="footer-odkazy">
+                            <a href="neni.html">Testovací jízda</a>
+                            <a href="neni.html">Cenová nabídka</a>
+                            <a href="neni.html">Kontaktní formulář</a>
+                            <a href="neni.html">Odběr novinek</a>
+                            <a href="neni.html">Operativní leasing</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-sekce">
+                        <div class="footer-nazev">Svět Hyundai</div>
+                        <div class="footer-line"></div>
+                        <div class="footer-odkazy">
+                            <a href="neni.html">Náš příběh</a>
+                            <a href="neni.html">Blog</a>
+                            <a href="neni.html">Press</a>
+                            <a href="neni.html">Volná místa</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="footer-socials-etc">
+                    <div id="footer-icons">
+                        <a href="neni.html" id="footer-icon1"></a>
+                        <a href="neni.html" id="footer-icon2"></a>
+                        <a href="neni.html" id="footer-icon3"></a>
+                        <a href="neni.html" id="footer-icon4"></a>
+                        <a href="neni.html" id="footer-icon5"></a>
+                    </div>
+                    <div id="footer-zeme">Česká republika (CS)</div>
+                </div>
+                <div id="footer-prava">Studentský projekt | Veškerý obsah patří Hyundai Motor Czech s.r.o.</div>
+                <div id="footer-podminky">
+                    <a href="neni.html">Kontaktní údaje</a>
+                    <a href="neni.html">Ochrana osobních údajů</a>
+                    <a href="neni.html">Zásady používání cookies</a>
+                    <a href="neni.html">Obchodní podmínky</a>
+                    <a href="neni.html">Cookies settings</a>
+                </div>
+            </div>
+        </footer>
+        <div id="fixed_menu">
+
+            <div id="fixed_jizda" class="clickable" onclick="location.href = './testovaci-jizda.html'">
+                Testovací jízda
+            </div>
+
+            <div id="fixed_konfigurator" class="clickable" onclick="location.href = './konfigurator.html'">
+                Konfigurátor
+            </div>
+
+            <div id="fixed_nabidka" class="clickable" onclick="location.href = './cenova-nabidka.html'">
+                Získat nabídku
+            </div>
+
+            <div id="fixed_vozy" class="clickable" onclick="location.href = './skladove-vozy.html'">
+                Skladové vozy
+            </div>
+        </div>
+        </menu>
+    </div>
+
+</body>
+
+</html>

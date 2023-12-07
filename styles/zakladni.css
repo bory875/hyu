@@ -1,0 +1,275 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Hyundai-Regular";
+  src: url(../fonty/HyundaiSansHead-Regular.woff) format("woff");
+  src: url(../fonty/HyundaiSansHead-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Ikony";
+  src: url(../fonty/iconfont1.0.231-SNAPSHOT.woff) format("woff");
+  src: url(../fonty/iconfont1.0.231-SNAPSHOT.woff2) format("woff2");
+}
+html {
+  text-rendering: optimizeLegibility;
+  font-size: 10px;
+  background-color: white;
+}
+
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/*-----------------MODRÉ MENU-----------------------------*/
+#fixed_menu {
+  z-index: 99;
+  font-family: "Hyundai-Regular";
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: calc(50% - 18.6rem);
+  left: calc(100% - 9.1rem);
+  background-color: rgb(0, 44, 95);
+  color: white;
+}
+
+#fixed_menu > div {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 9.1rem;
+  height: 9.3rem;
+}
+
+#fixed_menu > div:hover {
+  background-color: rgb(0, 64, 138);
+}
+
+#fixed_menu > div::before {
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "ikony";
+}
+
+#fixed_jizda::before {
+  content: "\f123";
+}
+
+#fixed_konfigurator::before {
+  content: "\f119";
+}
+
+#fixed_nabidka::before {
+  content: "\f120";
+}
+
+#fixed_vozy::before {
+  content: "\f122";
+}
+
+/*-----------------KONEC MODRÉHO MENU------------------------*/
+/*----------------------HORNÍ LIŠTA--------------------------*/
+header {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
+}
+
+#horni_lista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 8.3rem;
+  box-sizing: border-box;
+  width: auto;
+  max-width: 1400px;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: height 0.5s;
+}
+
+#kliknutelne_logo::before {
+  color: rgb(0, 44, 95);
+  font-size: 1.9rem;
+  font-weight: 400;
+  font-family: "ikony";
+  content: "\f10d";
+}
+
+#kliknutelne_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+#burbr_menu {
+  display: none;
+}
+
+#normal_menu {
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  flex-grow: 5;
+  font-family: "Hyundai-Regular";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: rgb(0, 44, 95);
+}
+#normal_menu > div {
+  margin-left: 30px;
+  transition: margin-left 0.5s;
+}
+
+/*-------------------KONEC HORNÍ LIŠTY-----------------------*/
+/*-------------------BURBR MENU------------------------------*/
+#rozkliknuty_burbr {
+  font-family: "Hyundai-Regular";
+  line-height: 8.5rem;
+  font-size: 4rem;
+  color: rgb(0, 44, 95);
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.97);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#burbr_obsah {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#burbr_seznam {
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+  width: max(40%, 250px);
+}
+
+#burbr_zavrit {
+  position: absolute;
+  right: 30px;
+}
+#burbr_zavrit::before {
+  color: rgb(0, 44, 95);
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "ikony";
+  content: "\f106";
+}
+
+.rb_posunuti {
+  transition: margin-bottom 0.5s, opacity 0.5s !important;
+  margin-bottom: 0;
+  transition-timing-function: cubic-bezier(1, 0.285, 0.7, 0.905) !important;
+  opacity: 1 !important;
+}
+
+.rb_viditelny {
+  transition: opacity 0.5s;
+  display: block !important;
+  opacity: 1 !important;
+}
+
+/*-----------------KONEC BURBR MENU--------------------------*/
+/* ---------------------- ALT VERZE -------------------------*/
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  /*-----------------MODRÉ MENU----------------------------*/
+  #fixed_menu {
+    flex-direction: row;
+    top: calc(100% - 9.3rem);
+    left: calc(50% - 18.2rem);
+  }
+  /*-----------------KONEC MODRÉHO MENU--------------------*/
+  /*----------------------HORNÍ LIŠTA----------------------*/
+  #horni_lista {
+    height: 6rem;
+  }
+  #burbr_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    height: 100%;
+  }
+  #burbr_menu::before {
+    color: rgb(0, 44, 95);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "ikony";
+    content: "\f12a";
+  }
+  #normal_menu > div {
+    margin-left: 0;
+    display: none;
+  }
+  /*-------------------KONEC HORNÍ LIŠTY-------------------*/
+}
+/* ------------------ ALT ALT VERZE -------------------------*/
+@media screen and (max-width: 800px) {
+  /*-----------------MODRÉ MENU----------------------------*/
+  #fixed_menu {
+    width: 100%;
+    flex-direction: row;
+    left: 0;
+    top: calc(100% - 8.3rem);
+  }
+  #fixed_menu > div {
+    font-size: 0.9rem;
+    padding: 0;
+    width: 9.1rem;
+    height: 8.3rem;
+  }
+  #fixed_menu::before {
+    font-size: 3rem;
+  }
+  /*-----------------KONEC MODRÉHO MENU--------------------*/
+  /*-------------------BURBR MENU--------------------------*/
+  #rozkliknuty_burbr {
+    line-height: 7.3rem;
+    font-size: 3.1rem;
+  }
+  #burbr_obsah {
+    align-items: flex-start;
+    margin-left: 18%;
+  }
+  /*--------------- KONEC BURBR MENU-----------------------*/
+  #normal_menu > div {
+    margin-left: 0;
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  #normal_menu > div {
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=zakladni.css.map */

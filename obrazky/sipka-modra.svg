@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="70.492294mm"
+   height="25.400858mm"
+   viewBox="0 0 70.492294 25.400858"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="sipka.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-67.469362,-133.46376)">
+    <path
+       style="fill:#002c5f;fill-opacity:1;stroke:#ffffff;stroke-width:0.132292;stroke-linecap:round;stroke-linejoin:round"
+       d="m 128.79105,143.78355 -61.255546,-0.43279 0.130604,4.34705 60.994332,0.80219 -8.51483,7.27601 2.56341,3.02246 15.18649,-12.97008 -15.90289,-12.29849 -2.67545,2.7798 z"
+       id="path1"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="sipka.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

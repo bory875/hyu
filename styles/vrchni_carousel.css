@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Hyundai-Head-Bold";
+  src: url(../fonty/HyundaiSansHead-Bold.woff);
+}
+@font-face {
+  font-family: "Hyundai-Head-Medium";
+  src: url(../fonty/HyundaiSansHead-Medium.woff);
+}
+@font-face {
+  font-family: "Hyundai-Text-Bold";
+  src: url(../fonty/HyundaiSansText-Bold.woff);
+}
+@font-face {
+  font-family: "Hyundai-Text-Reg";
+  src: url(../fonty/HyundaiSansText-Regular.woff);
+}
+h1 {
+  display: block;
+  font-family: "Hyundai-Head-Medium";
+  font-weight: 400;
+  font-size: 7.4rem;
+  line-height: 7.4rem;
+}
+
+h2 {
+  font-family: "Hyundai-Head-Medium";
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+h3 {
+  font-family: "Hyundai-Head-Medium";
+  font-weight: 400;
+  font-size: 3.4rem;
+}
+
+h4 {
+  font-family: "Hyundai-Head-Medium";
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+#vrchni_carousel_obal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#vrchni_carousel {
+  right: 0;
+  transition: right 1s;
+  position: relative;
+  align-self: baseline;
+  display: flex;
+  flex-direction: row;
+  overflow-x: visible;
+  z-index: 3;
+}
+
+.vc_obsah {
+  display: flex;
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  flex-shrink: 0;
+}
+.vc_obsah h1,
+.vc_obsah h4 {
+  text-align: left;
+}
+
+.vc_obrazek_obal {
+  width: 84%;
+  max-height: 66rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.vc_obrazek {
+  width: 100%;
+  height: auto;
+  bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vc_nonimage {
+  height: 20rem;
+  position: relative;
+  bottom: 12rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.vc_text {
+  width: 80%;
+  position: relative;
+  margin: 0;
+  margin-left: 6%;
+  margin-bottom: 2rem;
+  z-index: 3;
+}
+.vc_text > h1 {
+  color: white;
+  text-shadow: black 0px 0px 30px;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+.vc_text > h4 {
+  color: white;
+  text-shadow: black 0px 0px 30px;
+  margin: 0;
+}
+
+.vc_nabidka {
+  box-sizing: border-box;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Hyundai-Text-Bold";
+  font-size: 1.2rem;
+  width: 25%;
+  background-color: rgb(0, 44, 95);
+  color: white;
+  margin-left: 5%;
+  margin-right: 13%;
+}
+.vc_nabidka > div > span {
+  margin-top: 1rem;
+}
+.vc_nabidka > div > a {
+  line-height: 4rem;
+  font-family: "Hyundai-Head-Medium";
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.vc_nabidka > a:link,
+.vc_nabidka a:visited {
+  color: white;
+}
+.vc_nabidka > div > .sipka {
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.vc-tlacitka {
+  z-index: 99;
+  position: relative;
+  bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vc-tlacitko {
+  border: 1px solid rgb(90, 90, 90);
+  background-color: rgb(0, 44, 95);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.vc-tlacitko:hover {
+  cursor: pointer;
+}
+
+/*-----------------ALT VERZE-----------------------------*/
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .vc_text {
+    z-index: 3;
+  }
+  .vc_text > h1 {
+    width: 100%;
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+  .vc_nonimage {
+    align-items: baseline;
+    bottom: 4rem;
+    flex-direction: column;
+  }
+  .vc_nabidka {
+    margin-left: 0%;
+    margin-right: 8%;
+    width: 84%;
+  }
+  /*-------------------KONEC HORNÍ LIŠTY-------------------*/
+}
+/* ------------------ ALT ALT VERZE -------------------------*/
+@media screen and (max-width: 800px) {
+  .vc_text {
+    z-index: 3;
+  }
+  .vc_text > h1 {
+    width: 100%;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  .vc_text > h4 {
+    font-size: 2rem;
+  }
+  .vc_nonimage {
+    align-items: baseline;
+    bottom: 5rem;
+    flex-direction: column;
+  }
+  .vc_nabidka {
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 84%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .vc_nabidka {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 8%;
+  }
+}/*# sourceMappingURL=vrchni_carousel.css.map */
