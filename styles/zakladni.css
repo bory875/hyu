@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Hyundai-Regular";
-  src: url(../fonty/HyundaiSansHead-Regular.woff) format("woff");
-  src: url(../fonty/HyundaiSansHead-Regular.woff2) format("woff2");
+  src: url(./fonty/HyundaiSansHead-Regular.woff) format("woff");
+  src: url(./fonty/HyundaiSansHead-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Ikony";
-  src: url(../fonty/iconfont1.0.231-SNAPSHOT.woff) format("woff");
-  src: url(../fonty/iconfont1.0.231-SNAPSHOT.woff2) format("woff2");
+  src: url(./fonty/iconfont1.0.231-SNAPSHOT.woff) format("woff");
+  src: url(./fonty/iconfont1.0.231-SNAPSHOT.woff2) format("woff2");
 }
 html {
   text-rendering: optimizeLegibility;
