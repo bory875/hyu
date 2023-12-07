@@ -1,32 +1,32 @@
 @font-face {
   font-family: "Hyundai-Head-Bold";
-  src: url(./fonty/HyundaiSansHead-Bold.woff) format("woff");
-  src: url(./fonty/HyundaiSansHead-Bold.woff2) format("woff2");
+  src: url(../fonty/HyundaiSansHead-Bold.woff) format("woff");
+  src: url(../fonty/HyundaiSansHead-Bold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Hyundai-Head-Medium";
-  src: url(./fonty/HyundaiSansHead-Medium.woff) format("woff");
-  src: url(./fonty/HyundaiSansHead-Medium.woff2) format("woff2");
+  src: url(../fonty/HyundaiSansHead-Medium.woff) format("woff");
+  src: url(../fonty/HyundaiSansHead-Medium.woff2) format("woff2");
 }
 @font-face {
   font-family: "Hyundai-Head-Reg";
-  src: url(./fonty/HyundaiSansHead-Regular.woff) format("woff");
-  src: url(./fonty/HyundaiSansHead-Regular.woff2) format("woff2");
+  src: url(../fonty/HyundaiSansHead-Regular.woff) format("woff");
+  src: url(../fonty/HyundaiSansHead-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Hyundai-Text-Bold";
-  src: url(./fonty/HyundaiSansText-Bold.woff) format("woff");
-  src: url(./fonty/HyundaiSansText-Bold.woff2) format("woff2");
+  src: url(../fonty/HyundaiSansText-Bold.woff) format("woff");
+  src: url(../fonty/HyundaiSansText-Bold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Hyundai-Text-Medium";
-  src: url(./fonty/HyundaiSansText-Medium.woff) format("woff");
-  src: url(./fonty/HyundaiSansText-Medium.woff2) format("woff2");
+  src: url(../fonty/HyundaiSansText-Medium.woff) format("woff");
+  src: url(../fonty/HyundaiSansText-Medium.woff2) format("woff2");
 }
 @font-face {
   font-family: "Hyundai-Text-Reg";
-  src: url(./fonty/HyundaiSansText-Regular.woff) format("woff");
-  src: url(./fonty/HyundaiSansText-Regular.woff2) format("woff2");
+  src: url(../fonty/HyundaiSansText-Regular.woff) format("woff");
+  src: url(../fonty/HyundaiSansText-Regular.woff2) format("woff2");
 }
 body {
   overflow-x: hidden;
